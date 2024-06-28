@@ -17,6 +17,7 @@ class Customer extends Model
         'gender',
         'phone_number',
         'subscription',
-        'date_of_birth'
+        'date_of_birth',
+        'active',
     ];
 }

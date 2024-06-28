@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('phone_number');
             $table->string('subscription');
             $table->string('date_of_birth');
+            $table->string('active');
             $table->timestamps();
         });
     }

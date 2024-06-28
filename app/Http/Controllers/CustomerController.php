@@ -44,6 +44,7 @@ class CustomerController extends Controller
             'phone_number' => 'required|max:10',
             'subscription' => 'required|max:10',
             'date_of_birth' => 'required|max:10',
+            'active' => 'required',
         ]);
 
         if ($validator->fails()) {
@@ -65,6 +66,7 @@ class CustomerController extends Controller
             'phone_number' => $request->phone_number,
             'subscription' => $request->subscription,
             'date_of_birth' => $request->date_of_birth,
+            'active' => $request->active,
         ]);
 
         if (!$customer) {
@@ -143,6 +145,7 @@ class CustomerController extends Controller
             'phone_number' => 'required|max:10',
             'subscription' => 'required|max:10',
             'date_of_birth' => 'required|max:10',
+            'active' => 'required',
         ]);
 
         if ($validator->fails()) {
