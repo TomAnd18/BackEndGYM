@@ -165,6 +165,7 @@ class CustomerController extends Controller
         $customer->phone_number = $request->phone_number;
         $customer->subscription = $request->subscription;
         $customer->date_of_birth = $request->date_of_birth;
+        $customer->active = $request->active;
 
         $customer->save();
 
